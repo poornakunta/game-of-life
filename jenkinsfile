@@ -2,4 +2,8 @@ node {
     stage('test') {
         sh 'echo hello'
     }
+    stage ('learning') {
+        git url: 'git@github.com:poornakunta/game-of-life.git',
+        branch: 'master'
+    }
 }
